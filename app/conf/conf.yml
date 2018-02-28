@@ -1,0 +1,39 @@
+testing:
+  db:
+    driver: pdo_mysql
+    host: 127.0.0.1
+    dbname: example
+    user: root
+    password: password
+    charset: utf8mb4
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    scheme: tcp
+    password: password
+  mailer:
+    port: 465
+    username: example@email.com
+    password: password
+    smtp: smtp.gmail.com
+    scheme: ssl
+  
+production:
+  db:
+    driver: pdo_mysql
+    host: 127.0.0.1
+    dbname: example
+    user: root
+    password: password
+    charset: utf8mb4
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    scheme: tcp
+    password: password
+  mailer:
+    port: 465
+    username: example@email.com
+    password: password
+    smtp: smtp.gmail.com
+    scheme: ssl

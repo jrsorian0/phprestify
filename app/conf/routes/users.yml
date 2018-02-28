@@ -1,0 +1,30 @@
+users.index:
+  path:     /
+  defaults: { _controller: 'Controller\UserController::indexAction' }
+  methods: [GET]
+
+users.create:
+  path:     /
+  defaults: { _controller: 'Controller\UserController::createAction' }
+  methods: [POST]
+
+users.read:
+  path:     /{id}
+  defaults: { _controller: 'Controller\UserController::readAction' }
+  methods: [GET]
+  requirements:
+    id: \d+
+
+users.update:
+  path:     /{id}
+  defaults: { _controller: 'Controller\UserController::updateAction' }
+  methods: [PUT]
+  requirements:
+    id: \d+
+
+users.delete:
+  path:     /{id}
+  defaults: { _controller: 'Controller\UserController::deleteAction' }
+  methods: [DELETE]
+  requirements:
+    id: \d+

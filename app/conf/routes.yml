@@ -1,0 +1,7 @@
+home:
+  path: /
+  defaults: { _controller: 'Controller\IndexController::indexAction' }
+
+users:
+  prefix: users
+  resource: routes/users.yml
